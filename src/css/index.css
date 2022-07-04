@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --bg-default : #e6e7ee;
+    --text-default : #44476A;
+    --light: #D1D9E6;
+    --bg-dark: #31344b;
+
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(../assets/font/Consolas.ttf);
+}
+@font-face {
+    font-family: Consolaz;
+    src: url(../assets/font/consolaz.ttf);
+}
+
+@font-face {
+    font-family: Consolai;
+    src: url(../assets/font/consolai.ttf);
+}
+
+@font-face {
+    font-family: Consola;
+    src: url(../assets/font/CONSOLA.TTF);
+}
+
+
+body{
+    font-family: "Consola", "Poppins";
+}
+
+.shadow-neu{
+    box-shadow: 5px 5px 26px #C2C3CD, -5px -5px 26px #FFFFFF;
+    border-radius: 5px;
+}
