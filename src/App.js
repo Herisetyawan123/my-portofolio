@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import styled from "styled-components";
 import Intro from "./components/Intro";
+import Skill from "./components/Skill/Skill";
 
 
 const ThemeBody = styled.div`
@@ -15,6 +16,7 @@ function App() {
     <ThemeBody>
       <Navbar />
       <Intro />
+      <Skill />
     </ThemeBody>
     </>
   );
