@@ -33,7 +33,7 @@
 
 body{
     font-family: "Consola", "Poppins";
-    background: #fcf6f4;
+    background: #fcf6f4 !important;
 }
 
 .shadow-neu{
