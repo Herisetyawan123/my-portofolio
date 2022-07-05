@@ -132,7 +132,7 @@ function Intro(){
                 }}
                 />
 
-                <div className="max-w-7xl  mx-auto p-10 sm:p-28">
+                <div className="max-w-7xl relative mx-auto p-10 sm:p-28">
                     <div className="flex flex-col sm:flex-row">
                         <div className="left  flex-1 flex flex-col items-start gap-y-16">
                             <h1 className="text-[40px] font-bold">Hello, <br /> i'am <span className="text-[#7858A6]">Fulstack Developer</span></h1>
@@ -145,7 +145,7 @@ function Intro(){
                             <Button link="">Hire Me</Button>
                         </div>
                         <div className="right hidden sm:flex flex-1 justify-end">
-                            <img src={Right} className="w-[440px] z-10" alt="right side" />
+                            <img src={Right} className="w-[440px]" alt="right side" />
                         </div>
                     </div>
                 </div>
