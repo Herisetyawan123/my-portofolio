@@ -36,6 +36,10 @@ body{
     background: #fcf6f4 !important;
 }
 
+body section{
+    background: #fcf6f4 !important;
+}
+
 .shadow-neu{
     box-shadow: 5px 5px 26px #C2C3CD, -5px -5px 26px #FFFFFF;
     border-radius: 5px;

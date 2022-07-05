@@ -19,7 +19,7 @@ function Intro(){
 
     return (
         <>
-            <div className="w-full">
+            <section className="w-full">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -149,7 +149,7 @@ function Intro(){
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 }
