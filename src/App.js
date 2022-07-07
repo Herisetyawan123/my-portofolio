@@ -15,11 +15,10 @@ function App() {
   }
 
   useEffect(() => {
-
-    Aos.init();
-    Aos.refresh();
+      document.body.classList.toggle('dark-content');
+      Aos.init();
+      Aos.refresh();
   });
-
 
   return (
     <>
