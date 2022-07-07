@@ -1,16 +1,10 @@
-import { useState } from "react";
-import Toggle from "../Toggle";
+import Toggle from '../Toggle/index'
 
-function Navbar(){
-    const [status, setStatus] = useState(false);
-
-    const handleStatus = () => {
-        setStatus(!status)
-    }
+function Navbar({handle, status}){
 
     return (
         <>
-            <nav className="bg-white relative z-10 pt-[45px]">
+            <section className="relative z-10 pt-[45px]">
                 {/* content */}
                 <div className="max-w-5xl shadow-neu px-10 py-2 rounded-lg mx-auto flex justify-between items-center">
                     {/* brand */}
@@ -32,9 +26,9 @@ function Navbar(){
                             <a href="/">Contact</a>
                         </li>
                     </ul>
-                    <Toggle handle={handleStatus} status={status}/>
+                    <Toggle handle={handle} status={status}/>
                 </div>
-            </nav>
+            </section>
         </>
     );
 

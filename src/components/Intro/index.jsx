@@ -2,28 +2,22 @@ import Button from "../Button";
 import Right from "../../assets/img/right.png";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Typewriter } from 'react-simple-typewriter';
+
+
 
 function Intro(){
     const particlesInit = async (main) => {
-        console.log(main);
-    
-        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(main);
-      };
-    
-      const particlesLoaded = (container) => {
-        console.log(container);
-      };
+    };
 
+    
     return (
         <>
             <section className="w-full">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                loaded={particlesLoaded}
                 options={{
                 fpsLimit: 120,
                 particles: {
@@ -135,14 +129,30 @@ function Intro(){
                 <div className="max-w-7xl relative mx-auto p-10 sm:p-28">
                     <div className="flex flex-col sm:flex-row">
                         <div className="left  flex-1 flex flex-col items-start gap-y-16">
-                            <h1 className="text-[40px] font-bold">Hello, <br /> i'am <span className="text-[#7858A6]">Fulstack Developer</span></h1>
+                            
+                            <h1 className="text-[35px] font-bold">Hello, <br /> I'am  
+                                <span className="text-[#7858A6]">
+                                    {/* { text } */}
+                                    <Typewriter
+                                        words={[' Fullstack', ' Backend', ' Flutter']}
+                                        loop={0}
+                                        cursor
+                                        cursorStyle='|'
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+                                    />
+                                                            </span>
+                            </h1>
 
                             <p>Let me introduce my self. My name is Heri setyawan, but you can call me heri or wawan, whatever you want. I'm currently studying at Jember University majoring in informatics
                             <br />
                             <br />
                             I have an interest in web development especially in the backend but I also like the front end       </p>
-
-                            <Button link="">Hire Me</Button>
+                            <div className="flex gap-x-3 justify-start">
+                                <Button link="">Hire Me</Button>
+                                <Button link="">Download CV</Button>
+                            </div>
                         </div>
                         <div className="right hidden sm:flex flex-1 justify-end">
                             <img src={Right} className="w-[440px]" alt="right side" />
